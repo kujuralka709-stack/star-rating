@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="rating-card">
+        <h2>Rate Your Experience</h2>
+        
+        <!-- Data attributes (data-value) use karke stars banaye hain -->
+        <div class="stars-container" id="star-container">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <div class="rating-display">
+            Rating: <span id="rating-value">0</span> / 5
+        </div>
+        
+        <button id="reset-btn">Reset Rating</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

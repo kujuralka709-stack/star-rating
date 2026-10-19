@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.rating-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.star {
+    font-size: 2.5rem;
+    color: #e4e4e4;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover preview state */
+.star.hovered {
+    color: #ffc107;
+}
+
+/* Selected state */
+.star.filled {
+    color: #ff9800;
+}
+
+.star:active {
+    transform: scale(0.9);
+}
+
+.rating-display {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#rating-value {
+    font-weight: bold;
+    color: #ff9800;
+}
+
+#reset-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+#reset-btn:hover {
+    background-color: #d32f2f;
+}
